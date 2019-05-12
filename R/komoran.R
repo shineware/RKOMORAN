@@ -57,6 +57,7 @@ RKOMORAN <- R6::R6Class("RKOMORAN",
         token_info <- analysis_result$get(as.integer(i - 1))
 
         morpheme <- token_info$getMorph()
+        Encoding(morpheme) <- "UTF-8"
         tag <- token_info$getPos()
         begin_index <- token_info$getBeginIndex()
         end_index <- token_info$getEndIndex()
@@ -76,6 +77,7 @@ RKOMORAN <- R6::R6Class("RKOMORAN",
       for (i in 1:num_of_morphemes) {
         pair <- analysis_result$get(as.integer(i - 1))
         morpheme <- pair$getFirst()
+        Encoding(morpheme) <- "UTF-8"
         tag <- pair$getSecond()
 
         morpheme_tag_pairs[[i]] <- list(Morpheme = morpheme, Tag = tag)

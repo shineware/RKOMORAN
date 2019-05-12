@@ -1,3 +1,4 @@
+#' @export
 RKOMORAN <- R6::R6Class("RKOMORAN",
   public = list(
     initialize = function(model_type) {

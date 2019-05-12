@@ -20,7 +20,7 @@ Description: An implementation of wrapper of Korean Morphological Analyzer.
     Users can obtain the result of Korean morpheme just writing 1-2 lines. 
     Moreover, RKOMORAN provides the feature of custom dictionary. Custom 
     dictionary can give users the flexibility to customize their environment.
-License: MIT + file LICENSE
+License: Apache License (>= 2.0)
 Encoding: UTF-8
 LazyData: true
 Imports: 

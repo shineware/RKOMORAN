@@ -1,0 +1,28 @@
+Package: RKOMORAN
+Title: R Korean Morphological Analyzer
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Junsoo",
+           family = "Shin",
+           role = c("cph"),
+           email = "first.last@example.com"),
+    person(given = "Junghwan",
+           family = "Park",
+           role = c("ctb"),
+           email = "first.last@example.com"),
+    person(given = "Geunho",
+           family = "Lee",
+           role = c("aut", "cre"),
+           email = "lkh7689@gmail.com"))
+Description: An implementation of wrapper of Korean Morphological Analyzer. 
+    RKOMORAN is an open-source software for preprocessing the task of 
+    Korean Natural Lanugage Processing. It is easy to use after installation.
+    Users can obtain the result of Korean morpheme just writing 1-2 lines. 
+    Moreover, RKOMORAN provides the feature of custom dictionary. Custom 
+    dictionary can give users the flexibility to customize their environment.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    rJava
+RoxygenNote: 6.1.1

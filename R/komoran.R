@@ -14,7 +14,7 @@ RKOMORAN <- R6::R6Class("RKOMORAN",
         rJava::.jnew("kr/co/shineware/nlp/komoran/core/Komoran", model)
     },
     set_user_dic = function(user_dic) {
-      private$komoran$setUserDic(user_dic)
+      rJava::.jcall(private$komoran, "V", "setUserDic", user_dic)
     },
     set_fw_dic = function(fw_dic) {
       private$komoran$setFWDic(fw_dic)

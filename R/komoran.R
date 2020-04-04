@@ -5,9 +5,9 @@ RKOMORAN <- R6::R6Class("RKOMORAN",
       default_model <- "kr/co/shineware/nlp/komoran/constant/DEFAULT_MODEL"
 
       if (model_type == "STABLE") {
-        model <- rJava::.jfield(default_model, name = "LIGHT")
+        model <- rJava::.jfield(default_model, name = "STABLE")
       } else if (model_type == "EXP") {
-        model <- rJava::.jfield(default_model, name = "FULL")
+        model <- rJava::.jfield(default_model, name = "EXPERIMENT")
       }
 
       private$komoran <-

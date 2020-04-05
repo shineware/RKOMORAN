@@ -1,4 +1,6 @@
 .onLoad <- function(libname, pkgname) {
-  rJava::.jpackage(pkgname, lib.loc = libname)
-  rJava::.jaddClassPath("inst/java/KOMORAN-3.3.8.jar")
+  options(java.parameters = c("-Xms1g", "-Xmx1g"))
+
+  libraryPath = "inst/java/KOMORAN-36f59cf.jar"
+  rJava::.jpackage(pkgname, morePaths = libraryPath, lib.loc = libname)
 }

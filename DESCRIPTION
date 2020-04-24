@@ -1,6 +1,6 @@
 Package: RKOMORAN
 Title: R Korean Morphological Analyzer
-Version: 0.0.0.9003
+Version: 0.0.0.9004
 Authors@R: c(
     person(given = "Junsoo",
            family = "Shin",
